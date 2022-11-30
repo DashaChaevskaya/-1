@@ -15,4 +15,6 @@ h1,h2,h3 {
 }
 #name {
     display:flex;
+    align-items: center;
+    margin-left: 8px;
 }
