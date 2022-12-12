@@ -8,8 +8,13 @@ h1,h2,h3 {
 #all {
     display:flex;
 }
+#pictures {
+    flex: 1 0 auto;
+}
 #info {
     padding-left: 30px;
+    flex: 1 1 auto;
+    align-items: left;
 }
 .name {
     display:flex;
@@ -17,4 +22,17 @@ h1,h2,h3 {
 }
 .avatar {
     margin-left: 8px;
+}
+#rating {
+    display: flex;
+}
+#stars {
+    flex: 1 0 auto;
+}
+#cost {
+    flex: 0 1 auto;
+    align-items:right;
+}
+#title {
+    display: flex;
 }
