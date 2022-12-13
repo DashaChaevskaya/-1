@@ -7,14 +7,15 @@ h1,h2,h3 {
 }
 #all {
     display:flex;
-}
+    flex-wrap:wrap;
+    }
 #pictures {
-    flex: 1 0 auto;
+    
 }
 #info {
     padding-left: 30px;
-    flex: 1 1 auto;
     align-items: left;
+    width: 1000px;
 }
 .name {
     display:flex;
@@ -24,15 +25,28 @@ h1,h2,h3 {
     margin-left: 8px;
 }
 #rating {
-    display: flex;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
 }
 #stars {
-    flex: 1 0 auto;
+    flex: 0 0 auto;
 }
 #cost {
     flex: 0 1 auto;
-    align-items:right;
 }
 #title {
     display: flex;
+    flex-wrap: wrap;
+}
+#name {
+    flex: 0 0 370px;
+}
+#autor {
+   flex: 0 1 210px;
+   justify-content:flex-end;
+}
+p {
+    text-indent: 20px;
+    text-align: justify;
 }
