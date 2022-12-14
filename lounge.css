@@ -6,12 +6,9 @@ h1,h2,h3 {
     font-weight: normal;
 }
 #all {
-    display:flex;
+    display:inline-flex;
     flex-wrap:wrap;
     }
-#pictures {
-    
-}
 #info {
     padding-left: 30px;
     align-items: left;
@@ -40,10 +37,11 @@ h1,h2,h3 {
     flex-wrap: wrap;
 }
 #name {
-    flex: 0 0 370px;
+    flex: 0 0 auto;
+    padding-right: 10px;
 }
 #autor {
-   flex: 0 1 210px;
+   flex: 0 1 auto;
    justify-content:flex-end;
 }
 p {
