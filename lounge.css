@@ -8,11 +8,11 @@ h1,h2,h3 {
 #all {
     display:inline-flex;
     flex-wrap:wrap;
+    column-gap: 30px;
     }
 #info {
-    padding-left: 30px;
     align-items: left;
-    width: 1000px;
+    flex: 1 1 400px;
 }
 .name {
     display:flex;
@@ -35,16 +35,22 @@ h1,h2,h3 {
 #title {
     display: flex;
     flex-wrap: wrap;
+    column-gap: 20px;
 }
 #name {
-    flex: 0 0 auto;
-    padding-right: 10px;
-}
+    flex: 0 1 auto;
+    }
 #autor {
    flex: 0 1 auto;
    justify-content:flex-end;
 }
-p {
+h3~p {
     text-indent: 20px;
     text-align: justify;
+}
+#pictures {
+    flex: 0 1 400px;
+}
+#poster {
+    width:100%;
 }
