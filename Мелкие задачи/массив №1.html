@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <meta charset="utf-8">
+    <title></title>
+    <script>
+        "use strict"
+        let massiv = prompt("Введите числа через запятую");
+        massiv = massiv.split(",");
+        let New = [];
+        let i;
+        let a = massiv.length;
+        let b=0;
+        for (i=0; i<=a; i++) {
+          if (!isNaN(parseInt(massiv[i]))){
+            if (massiv[i]%2===0) {
+                New[b] = massiv[i];
+                b++;
+            }
+        }
+        }
+        console.log(New);
+    </script>
+    <body>
+    </body>
+</html>

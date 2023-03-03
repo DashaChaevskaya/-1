@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <script>
+            "use strict"
+           let num = prompt("Введите число от 10 до 99");
+           let num1 = parseInt(num);
+           if (isNaN(num1)) {
+             alert("Введено неверное число");
+           } else if (num.length != 2) {
+            alert("Введено неверное число");
+           } else {
+            num = String(num);
+            let sum = Number(num[0])+Number(num[1]);
+            sum = String(sum);
+            if (sum.length ==1) {
+                alert("Сумма чисел однозначна и равна " + sum);
+            } else {
+                alert("Сумма чисел двузначная и равна " + sum);
+            }
+           }
+        </script>
+    </head>
+    <body>
+    </body>
+</html>
