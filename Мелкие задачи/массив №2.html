@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>массив 2</title>
+        <meta charset="utf-8">
+        <script>
+            "use ctrict"
+            let arr1 = prompt("Введите числа первого массива через запятую");
+            arr1 = arr1.split(",");
+            let arr2 = prompt("Введите числа второго массива через запятую");
+            arr2 = arr2.split(",");
+            let result = [];
+            let a = arr1.length-1;
+            let b = arr2.length-1;
+            let i = 0 , j = 0;
+            for (i=0; i<=a; i++) {
+                for (j=0; j<=b; j++) {
+                    if (arr1[i]==arr2[j]) {
+                        result.push(arr1[i]);
+                    }
+                }
+            }
+            console.log (result);
+
+        </script>
+    </head>
+    <body></body>
+</html>
