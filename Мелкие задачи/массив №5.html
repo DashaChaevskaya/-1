@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Массив5</title>
+        <meta charset="utf-8">
+        <script>
+            "use strict"
+            let arr = prompt("Введите числа через запятую");
+            arr = arr.split(",");
+            let a = arr.length;
+            let sum = 0;
+            let newarr = [];
+            for (let i=0; i<a; i++) {
+                if (!isNaN(parseInt(arr[i]))) {
+                sum = sum + Number(arr[i]);
+                }
+            }
+            for (let i=0; i<a; i++) {
+                if (Number(arr[i])>(sum/a)) {
+                    newarr.push(arr[i]);
+                }
+            }
+            console.log(newarr);
+        </script>
+    </head>
+    <body></body>
+</html>

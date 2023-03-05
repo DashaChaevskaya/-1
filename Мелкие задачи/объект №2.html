@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Объект</title>
+        <meta charset="utf-8">
+        <script>
+            "use strict"
+            let obj = [{Name: "Вера", Salary: 4300}, {Name: "Люда", Salary: 6000 },{Name: "Вася", Salary: 5010}];
+            let arr = [];
+            for (let i = 0; i<obj.length; i++) {
+                let person = obj[i];
+                let salary = person.salary;
+                if (salary>5000) {
+                    arr.push(person); 
+                }
+            }
+            
+            console.log(arr);
+        </script>    
+    </head>
+    <body></body>
+</html>
