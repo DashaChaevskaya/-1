@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>massiv3</title>
+        <meta charset="utf-8">
+        <script>
+            "use strict"
+            
+            let arr = [{Name: "Даша", Age: 33}, {Name: "Миша", Age: 6}, {Name: "Ваня", Age: 37}];
+            let newarr = [];
+            let max = 0;
+            let a = arr.length;
+            let k = 0;
+            let j;
+            for (let i=0; i<a; i++) {
+                 
+                let person = arr[i];
+                let age = person.Age;
+                
+                if (max < age) {
+                    max = age;
+                    newarr[0] = person ; 
+                    
+                }
+                
+            }
+            
+            for (j = 1; j<a; j++) {
+                
+                for (let i=0; i<a; i++) {
+                 
+                     let person = arr[i];
+                    let age = person.Age;
+                 
+                    if (k < age && age <max) {
+                        
+                        newarr[j] = person ; 
+                        k = age;
+                                             
+                    }
+                
+                 
+                }
+
+                k= 0;
+                let b = newarr.length-1;
+                let child = newarr[b];
+                max = child.Age; 
+            }
+              
+            console.log (newarr);
+
+        </script>
+
+    </head>
+    <body></body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Massiv4</title>
+        <meta charset="utf-8">
+        <script>
+            "use strict"
+            let arr = prompt("Введите строки через пробел");
+            arr = arr.split(' ');
+            let arrA = [];
+            let a = arr.length;
+            for (let i=0; i<a; i++) {
+                let str = arr[i];
+                let first = str[0];
+                if (first=='a'||first=='A'||first=='а'||first=='А') {
+                    arrA.push(arr[i]);
+                }
+            }
+            console.log(arrA);
+        </script>
+    </head>
+    <body></body>
+</html>
